@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="taxPane" prefHeight="220.0" prefWidth="535.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.appforbank.controller.Tax">
+   <children>
+      <Label alignment="CENTER" layoutX="159.0" layoutY="24.0" prefWidth="200.0" text="Tax Rate" textFill="#ff6666" AnchorPane.leftAnchor="159.0" AnchorPane.topAnchor="24.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="rateTxt" labelFloat="true" layoutX="50.0" layoutY="66.0" prefWidth="200.0" promptText="Rate" AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="sRateTxt" labelFloat="true" layoutX="50.0" layoutY="111.0" prefWidth="200.0" promptText="Start Range" AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="eRateTxt" labelFloat="true" layoutX="50.0" layoutY="157.0" prefWidth="200.0" promptText="End Range" AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="saveBtn" layoutX="384.0" layoutY="111.0" onAction="#saveNewTaxRate" prefWidth="100.0" style="-fx-background-color: #5BC0DE;" text="Save" textFill="WHITE" AnchorPane.leftAnchor="384.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="homeBtn" layoutX="384.0" layoutY="157.0" onAction="#goHome" prefWidth="100.0" style="-fx-background-color: red;" text="Dashboard" textFill="WHITE" AnchorPane.leftAnchor="384.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

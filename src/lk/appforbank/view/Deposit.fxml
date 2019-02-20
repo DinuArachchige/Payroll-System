@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="depositPane" prefHeight="220.0" prefWidth="535.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.appforbank.controller.Deposit">
+   <children>
+      <Label alignment="CENTER" layoutX="149.0" layoutY="29.0" prefWidth="200.0" text="Deposite money" textFill="#ff5e5e" AnchorPane.leftAnchor="149.0" AnchorPane.topAnchor="29.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="tidTxt" labelFloat="true" layoutX="49.0" layoutY="66.0" prefHeight="25.0" prefWidth="134.0" promptText="Transaction ID" />
+      <JFXTextField fx:id="accountNoTxt" labelFloat="true" layoutX="49.0" layoutY="111.0" prefHeight="25.0" prefWidth="134.0" promptText="Account No" AnchorPane.leftAnchor="49.0" />
+      <JFXComboBox fx:id="transactionTypeCombo" labelFloat="true" layoutX="49.0" layoutY="155.0" prefHeight="25.0" prefWidth="134.0" promptText="Transaction type" AnchorPane.leftAnchor="49.0" />
+      <JFXTextField fx:id="amountTxt" labelFloat="true" layoutX="215.0" layoutY="66.0" prefHeight="25.0" prefWidth="134.0" promptText="Amount" AnchorPane.leftAnchor="215.0" />
+      <JFXTextField fx:id="trackIDTxt" labelFloat="true" layoutX="215.0" layoutY="112.0" prefHeight="25.0" prefWidth="134.0" promptText="Track ID" AnchorPane.leftAnchor="215.0" />
+      <JFXTextField fx:id="userTxt" labelFloat="true" layoutX="215.0" layoutY="155.0" prefHeight="25.0" prefWidth="134.0" promptText="User" AnchorPane.leftAnchor="215.0" />
+      <JFXButton fx:id="saveBtn" layoutX="407.0" layoutY="91.0" onAction="#depositMoney" prefWidth="100.0" style="-fx-background-color: #5BC0DE;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="homeBtn" layoutX="407.0" layoutY="140.0" onAction="#goHome" prefWidth="100.0" style="-fx-background-color: red;" text="Dashboard" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

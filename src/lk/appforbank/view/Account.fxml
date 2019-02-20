@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="newAccountPane" prefHeight="220.0" prefWidth="535.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.appforbank.controller.Account">
+   <children>
+      <Label alignment="CENTER" layoutX="121.0" layoutY="25.0" prefHeight="46.0" prefWidth="277.0" text="Create New Account" textFill="#ff3d3d" AnchorPane.leftAnchor="121.0" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="accountNoTxt" labelFloat="true" layoutX="50.0" layoutY="97.0" prefWidth="200.0" promptText="Account no" AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="accountTypeCombo" labelFloat="true" layoutX="283.0" layoutY="102.0" prefHeight="25.0" prefWidth="200.0" promptText="select type" AnchorPane.leftAnchor="283.0" />
+      <JFXButton fx:id="saveBtn" layoutX="132.0" layoutY="159.0" onAction="#openNewAccount" prefWidth="100.0" style="-fx-background-color: #5BC0DE;" text="Create" textFill="WHITE" AnchorPane.leftAnchor="132.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="homeBtn" layoutX="276.0" layoutY="159.0" onAction="#goHome" prefWidth="100.0" style="-fx-background-color: red;" text="Dashboard" textFill="WHITE" AnchorPane.leftAnchor="276.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
